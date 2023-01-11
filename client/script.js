@@ -83,8 +83,8 @@ const handleSubmit = async (e) => {
 
     // messageDiv.innerHTML = "..."
     loader(messageDiv);
-
-    const response = await fetch("https://chatgpt-q8lw.onrender.com", {
+    // https://chatgpt-q8lw.onrender.com
+    const response = await fetch("http://localhost:5000", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
